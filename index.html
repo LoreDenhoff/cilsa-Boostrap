@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Ejemplo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .card-img-top{ height: 200px; object-fit: contain; padding: 10px;}
+    </style>
+</head>
+  <body>
+    <div class="container">
+        <h1 class="text-center mt-4"> Tienda de Tecnología </h1>
+        <p class="text-center"> Conocé alguno de nuestros productos destacados </p>
+
+        <div class="row">
+           <!--1er producto-->
+           <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/notebook.JPG" 
+                         class="card-img-top"
+                         alt="Notebook"
+                    >
+                    <div class="card-body">
+                        <h2 class="card-title"> Notebook </h2>
+                        <p class="card-text"> Notebook ideal para estudiar, trbajar y navegar por internet</p>
+                        <button class="btn btn-primary"> Ver producto </button>
+                    </div>
+                </div>
+           </div> 
+
+           <!--2do producto-->
+           <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/mouse.JPG" 
+                         class="card-img-top"
+                         alt="Mouse"
+                    >
+                    <div class="card-body">
+                        <h2 class="card-title"> Mouse inalámbrico </h2>
+                        <p class="card-text"> Mouse inalámbrico cómodo y práctico para usar todos los días</p>
+                        <button class="btn btn-primary"> Ver producto </button>
+                    </div>
+                </div>
+           </div> 
+
+           <!--3er producto-->
+           <div class="col-md-4">
+                <div class="card">
+                    <img src="./img/teclado.JPG" 
+                         class="card-img-top"
+                         alt="Teclado"
+                    >
+                    <div class="card-body">
+                        <h2 class="card-title"> Teclado </h2>
+                        <p class="card-text"> Teclado USB cómodo para estudiar, trabajar o programar</p>
+                        <button class="btn btn-primary"> Ver producto </button>
+                    </div>
+                </div>
+           </div> 
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
