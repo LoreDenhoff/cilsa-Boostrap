@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Categorías - TechStore</title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      background-color: #f4f7fb;
+    }
+
+    .encabezado {
+      background-color: #172554;
+    }
+
+    .card {
+      border: none;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: contain;
+      padding: 10px;
+    }
+
+    .precio {
+      color: #2563eb;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- MENÚ -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="index.html">
+        TechStore
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Abrir menú"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="menu">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Inicio
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="categorias.html">
+              Categorías
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">
+              Contacto
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- ENCABEZADO -->
+  <div class="container mt-4">
+
+    <header class="encabezado text-white text-center py-4 rounded shadow">
+
+      <h1>Categorías</h1>
+
+      <p class="mb-0">
+        Explorá nuestros productos
+      </p>
+
+    </header>
+
+  </div>
+
+
+  <!-- CATEGORÍA 1 -->
+  <main class="container mt-5">
+
+    <h2 class="text-center text-primary mb-4">
+      💻 Computación
+    </h2>
+
+
+    <div class="row g-4 mb-5">
+
+
+      <!-- PRODUCTO 1 -->
+      <div class="col-sm-12 col-md-4">
+
+        <div class="card shadow h-100">
+
+          <img
+            src="./img/notebook.JPG"
+            class="card-img-top"
+            alt="Notebook"
+          >
+
+          <div class="card-body text-center">
+
+            <h3 class="card-title">
+              Notebook
+            </h3>
+
+            <p class="card-text">
+              Notebook ideal para estudiar, trabajar y navegar.
+            </p>
+
+            <p class="precio">
+              $850.000
+            </p>
+
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalNotebook"
+            >
+              Ver producto
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCTO 2 -->
+      <div class="col-sm-12 col-md-4">
+
+        <div class="card shadow h-100">
+
+          <img
+            src="./img/teclado.JPG"
+            class="card-img-top"
+            alt="Teclado"
+          >
+
+          <div class="card-body text-center">
+
+            <h3 class="card-title">
+              Teclado USB
+            </h3>
+
+            <p class="card-text">
+              Teclado cómodo para estudiar, trabajar o programar.
+            </p>
+
+            <p class="precio">
+              $35.000
+            </p>
+
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalTeclado"
+            >
+              Ver producto
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCTO 3 -->
+      <div class="col-sm-12 col-md-4">
+
+        <div class="card shadow h-100">
+
+          <img
+            src="./img/mouse.JPG"
+            class="card-img-top"
+            alt="Mouse"
+          >
+
+          <div class="card-body text-center">
+
+            <h3 class="card-title">
+              Mouse inalámbrico
+            </h3>
+
+            <p class="card-text">
+              Mouse práctico y cómodo para uso diario.
+            </p>
+
+            <p class="precio">
+              $25.000
+            </p>
+
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalMouse"
+            >
+              Ver producto
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- CATEGORÍA 2 -->
+    <h2 class="text-center text-primary mb-4">
+      🎮 Accesorios tecnológicos
+    </h2>
+
+
+    <div class="row g-4 mb-5">
+
+
+      <!-- PRODUCTO 4 -->
+      <div class="col-sm-12 col-md-4">
+
+        <div class="card shadow h-100">
+
+          <img
+            src="./img/mouse.JPG"
+            class="card-img-top"
+            alt="Mouse gamer"
+          >
+
+          <div class="card-body text-center">
+
+            <h3 class="card-title">
+              Mouse Gamer
+            </h3>
+
+            <p class="card-text">
+              Mouse de alta precisión para juegos y trabajo.
+            </p>
+
+            <p class="precio">
+              $40.000
+            </p>
+
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalMouseGamer"
+            >
+              Ver producto
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCTO 5 -->
+      <div class="col-sm-12 col-md-4">
+
+        <div class="card shadow h-100">
+
+          <img
+            src="./img/teclado.JPG"
+            class="card-img-top"
+            alt="Teclado mecánico"
+          >
+
+          <div class="card-body text-center">
+
+            <h3 class="card-title">
+              Teclado Mecánico
+            </h3>
+
+            <p class="card-text">
+              Teclado mecánico ideal para gaming y programación.
+            </p>
+
+            <p class="precio">
+              $70.000
+            </p>
+
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalTecladoMecanico"
+            >
+              Ver producto
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCTO 6 -->
+      <div class="col-sm-12 col-md-4">
+
+        <div class="card shadow h-100">
+
+          <img
+            src="./img/notebook.JPG"
+            class="card-img-top"
+            alt="Notebook Pro"
+          >
+
+          <div class="card-body text-center">
+
+            <h3 class="card-title">
+              Notebook Pro
+            </h3>
+
+            <p class="card-text">
+              Equipo potente para tareas exigentes.
+            </p>
+
+            <p class="precio">
+              $1.200.000
+            </p>
+
+            <button
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalNotebookPro"
+            >
+              Ver producto
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- ========================= -->
+  <!-- MODAL NOTEBOOK -->
+  <!-- ========================= -->
+
+  <div
+    class="modal fade"
+    id="modalNotebook"
+    tabindex="-1"
+    aria-hidden="true"
+  >
+
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h2 class="modal-title">
+            Notebook
+          </h2>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Cerrar"
+          ></button>
+
+        </div>
+
+        <div class="modal-body">
+
+          <p>
+            Notebook ideal para estudiar, trabajar y navegar por internet.
+          </p>
+
+          <p>
+            Pantalla de alta calidad, almacenamiento amplio y diseño cómodo.
+          </p>
+
+          <strong>
+            Precio: $850.000
+          </strong>
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Cerrar
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- MODAL TECLADO -->
+
+  <div
+    class="modal fade"
+    id="modalTeclado"
+    tabindex="-1"
+    aria-hidden="true"
+  >
+
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h2 class="modal-title">
+            Teclado USB
+          </h2>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+
+        </div>
+
+        <div class="modal-body">
+
+          <p>
+            Teclado USB cómodo y práctico.
+          </p>
+
+          <p>
+            Ideal para estudiar, trabajar y programar.
+          </p>
+
+          <strong>
+            Precio: $35.000
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- MODAL MOUSE -->
+
+  <div
+    class="modal fade"
+    id="modalMouse"
+    tabindex="-1"
+    aria-hidden="true"
+  >
+
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h2 class="modal-title">
+            Mouse inalámbrico
+          </h2>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+
+        </div>
+
+        <div class="modal-body">
+
+          <p>
+            Mouse inalámbrico cómodo y práctico para todos los días.
+          </p>
+
+          <strong>
+            Precio: $25.000
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- MODAL MOUSE GAMER -->
+
+  <div
+    class="modal fade"
+    id="modalMouseGamer"
+    tabindex="-1"
+    aria-hidden="true"
+  >
+
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h2 class="modal-title">
+            Mouse Gamer
+          </h2>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+
+        </div>
+
+        <div class="modal-body">
+
+          <p>
+            Mouse de alta precisión para gaming y trabajo.
+          </p>
+
+          <p>
+            Diseño ergonómico y excelente respuesta.
+          </p>
+
+          <strong>
+            Precio: $40.000
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- MODAL TECLADO MECÁNICO -->
+
+  <div
+    class="modal fade"
+    id="modalTecladoMecanico"
+    tabindex="-1"
+    aria-hidden="true"
+  >
+
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h2 class="modal-title">
+            Teclado Mecánico
+          </h2>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+
+        </div>
+
+        <div class="modal-body">
+
+          <p>
+            Teclado mecánico ideal para gaming y programación.
+          </p>
+
+          <p>
+            Construcción resistente y respuesta rápida.
+          </p>
+
+          <strong>
+            Precio: $70.000
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- MODAL NOTEBOOK PRO -->
+
+  <div
+    class="modal fade"
+    id="modalNotebookPro"
+    tabindex="-1"
+    aria-hidden="true"
+  >
+
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+
+        <div class="modal-header">
+
+          <h2 class="modal-title">
+            Notebook Pro
+          </h2>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+
+        </div>
+
+        <div class="modal-body">
+
+          <p>
+            Notebook potente para tareas exigentes.
+          </p>
+
+          <p>
+            Ideal para trabajo, programación y edición.
+          </p>
+
+          <strong>
+            Precio: $1.200.000
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+
+    <p class="mb-1">
+      © 2026 TechStore - Todos los derechos reservados
+    </p>
+
+    <a
+      href="contacto.html"
+      class="text-white"
+    >
+      Contactanos
+    </a>
+
+  </footer>
+
+
+  <!-- Bootstrap JavaScript -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+</body>
+
+</html>
