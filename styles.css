@@ -57,3 +57,27 @@ body{background:#f8fafc;color:var(--ts-text)}
 }
 
 footer{background:#08111f}
+
+.whatsapp{
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25d366;
+  color: white;
+  font-size: 2rem;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  transition: transform 0.25;
+}
+
+.whatsapp:hover{
+  color: white;
+  transform: scale(1.1);
+}
