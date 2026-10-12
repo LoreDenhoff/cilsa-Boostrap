@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1e1b4b"/><stop offset="1" stop-color="#6366f1"/></linearGradient></defs>
+<rect width="800" height="520" rx="36" fill="url(#g)"/>
+<circle cx="690" cy="80" r="120" fill="#ffffff" opacity=".07"/>
+<circle cx="90" cy="470" r="140" fill="#ffffff" opacity=".05"/>
+<rect x="275" y="110" width="250" height="330" rx="35" fill="#e2e8f0"/><rect x="335" y="140" width="130" height="18" rx="9" fill="#64748b"/><circle cx="320" cy="385" r="10" fill="#22c55e"/><path d="M400 210l-45 75h35l-20 65 75-95h-38l25-45z" fill="#2563eb"/>
+<rect x="36" y="36" width="220" height="44" rx="22" fill="#ffffff" opacity=".12"/>
+<text x="146" y="65" text-anchor="middle" fill="#ffffff" font-size="20" font-family="Arial, sans-serif" font-weight="700">TECHSTORE</text>
+<text x="400" y="490" text-anchor="middle" fill="#ffffff" font-size="24" font-family="Arial, sans-serif" font-weight="700">Power Bank 20.000</text>
+</svg>

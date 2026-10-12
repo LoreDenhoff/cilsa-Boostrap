@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0f172a"/><stop offset="1" stop-color="#0891b2"/></linearGradient></defs>
+<rect width="800" height="520" rx="36" fill="url(#g)"/>
+<circle cx="690" cy="80" r="120" fill="#ffffff" opacity=".07"/>
+<circle cx="90" cy="470" r="140" fill="#ffffff" opacity=".05"/>
+<rect x="210" y="180" width="380" height="180" rx="35" fill="#e2e8f0"/><rect x="250" y="235" width="75" height="48" rx="8" fill="#64748b"/><rect x="345" y="235" width="75" height="48" rx="8" fill="#64748b"/><rect x="440" y="235" width="110" height="48" rx="8" fill="#64748b"/><path d="M590 270h95" stroke="#e2e8f0" stroke-width="20" stroke-linecap="round"/>
+<rect x="36" y="36" width="220" height="44" rx="22" fill="#ffffff" opacity=".12"/>
+<text x="146" y="65" text-anchor="middle" fill="#ffffff" font-size="20" font-family="Arial, sans-serif" font-weight="700">TECHSTORE</text>
+<text x="400" y="490" text-anchor="middle" fill="#ffffff" font-size="24" font-family="Arial, sans-serif" font-weight="700">Hub USB-C</text>
+</svg>

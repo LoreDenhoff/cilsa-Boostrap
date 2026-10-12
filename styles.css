@@ -1,0 +1,59 @@
+
+:root{
+  --ts-dark:#0b1220;
+  --ts-blue:#2563eb;
+  --ts-text:#0f172a;
+}
+
+*{font-family:"Inter",sans-serif}
+body{background:#f8fafc;color:var(--ts-text)}
+
+.navbar-tech{
+  background:rgba(11,18,32,.97);
+  backdrop-filter:blur(12px);
+}
+
+.hero-tech{
+  min-height:560px;
+  background:
+    radial-gradient(circle at 80% 20%,rgba(59,130,246,.35),transparent 28%),
+    linear-gradient(135deg,#08111f,#0f1f38 50%,#0d2d5b);
+}
+
+.hero-product{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.14);
+  backdrop-filter:blur(16px);
+}
+
+.catalog-hero,.contact-hero{
+  background:
+    radial-gradient(circle at 90% 20%,rgba(59,130,246,.35),transparent 30%),
+    linear-gradient(135deg,#08111f,#102747);
+}
+
+.product-card{
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+
+.product-card:hover{
+  transform:translateY(-7px);
+  box-shadow:0 1.5rem 3rem rgba(15,23,42,.13)!important;
+}
+
+.product-card img{
+  height:230px;
+  object-fit:cover;
+}
+
+.modal-product-img{
+  width:100%;
+  max-height:350px;
+  object-fit:cover;
+}
+
+.contact-panel{
+  background:linear-gradient(160deg,#0b1220,#15386c);
+}
+
+footer{background:#08111f}

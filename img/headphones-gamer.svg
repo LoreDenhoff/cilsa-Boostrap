@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0f172a"/><stop offset="1" stop-color="#2563eb"/></linearGradient></defs>
+<rect width="800" height="520" rx="36" fill="url(#g)"/>
+<circle cx="690" cy="80" r="120" fill="#ffffff" opacity=".07"/>
+<circle cx="90" cy="470" r="140" fill="#ffffff" opacity=".05"/>
+<path d="M230 300v-35c0-115 75-190 170-190s170 75 170 190v35" fill="none" stroke="#e2e8f0" stroke-width="40" stroke-linecap="round"/><rect x="190" y="270" width="90" height="160" rx="35" fill="#94a3b8"/><rect x="520" y="270" width="90" height="160" rx="35" fill="#94a3b8"/>
+<rect x="36" y="36" width="220" height="44" rx="22" fill="#ffffff" opacity=".12"/>
+<text x="146" y="65" text-anchor="middle" fill="#ffffff" font-size="20" font-family="Arial, sans-serif" font-weight="700">TECHSTORE</text>
+<text x="400" y="490" text-anchor="middle" fill="#ffffff" font-size="24" font-family="Arial, sans-serif" font-weight="700">Auriculares Gamer</text>
+</svg>

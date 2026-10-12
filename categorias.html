@@ -1,723 +1,1094 @@
 <!doctype html>
 <html lang="es">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Productos - TechStore</title>
 
-  <title>Categorías - TechStore</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 
-  <!-- Bootstrap -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
-
-  <style>
-    body {
-      background-color: #f4f7fb;
-    }
-
-    .encabezado {
-      background-color: #172554;
-    }
-
-    .card {
-      border: none;
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card-img-top {
-      height: 200px;
-      object-fit: contain;
-      padding: 10px;
-    }
-
-    .precio {
-      color: #2563eb;
-      font-size: 1.3rem;
-      font-weight: bold;
-    }
-  </style>
 </head>
-
 <body>
 
-
-  <!-- MENÚ -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-    <div class="container">
-
-      <a class="navbar-brand fw-bold" href="index.html">
-        TechStore
-      </a>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#menu"
-        aria-controls="menu"
-        aria-expanded="false"
-        aria-label="Abrir menú"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-
-      <div class="collapse navbar-collapse" id="menu">
-
-        <ul class="navbar-nav ms-auto">
-
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              Inicio
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" href="categorias.html">
-              Categorías
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">
-              Contacto
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
+<nav class="navbar navbar-expand-lg navbar-dark navbar-tech py-3 sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4" href="index.html"><i class="bi bi-cpu-fill me-2 text-primary"></i>Tech<span class="text-primary">Store</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="categorias.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
     </div>
-
-  </nav>
-
-
-  <!-- ENCABEZADO -->
-  <div class="container mt-4">
-
-    <header class="encabezado text-white text-center py-4 rounded shadow">
-
-      <h1>Categorías</h1>
-
-      <p class="mb-0">
-        Explorá nuestros productos
-      </p>
-
-    </header>
-
   </div>
+</nav>
 
 
-  <!-- CATEGORÍA 1 -->
-  <main class="container mt-5">
+<header class="catalog-hero text-white py-5">
+  <div class="container py-4">
+    <span class="badge text-bg-primary rounded-pill mb-3">Catálogo completo</span>
+    <h1 class="display-4 fw-bold">Elegí entre nuestros productos</h1>
+    </div>
+</header>
 
-    <h2 class="text-center text-primary mb-4">
-      💻 Computación
-    </h2>
+<main class="container py-5">
+  <section class="mb-5">
+    <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4">
+      <div><span class="badge text-bg-primary rounded-pill mb-2">Categoría 01</span><h2 class="fw-bold mb-0">Computación</h2></div>
+      <span class="text-secondary">10 productos</span>
+    </div>
+    <div class="row g-4">
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/notebook-air.svg" class="card-img-top bg-light" alt="Notebook Air">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Computación</span>
+      <h3 class="h4 fw-bold">Notebook Air</h3>
+      <p class="text-secondary">Notebook liviana para estudiar, trabajar y navegar todos los días.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$850.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-notebook-air">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/notebook-pro.svg" class="card-img-top bg-light" alt="Notebook Pro">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Computación</span>
+      <h3 class="h4 fw-bold">Notebook Pro</h3>
+      <p class="text-secondary">Equipo de alto rendimiento para programación, edición y tareas exigentes.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$1.200.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-notebook-pro">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/monitor-24.svg" class="card-img-top bg-light" alt="Monitor 24”">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Computación</span>
+      <h3 class="h4 fw-bold">Monitor 24”</h3>
+      <p class="text-secondary">Monitor Full HD ideal para estudio, oficina y entretenimiento.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$220.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-monitor-24">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/monitor-27.svg" class="card-img-top bg-light" alt="Monitor 27”">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Computación</span>
+      <h3 class="h4 fw-bold">Monitor 27”</h3>
+      <p class="text-secondary">Pantalla amplia para multitarea, diseño y entretenimiento.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$320.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-monitor-27">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/mini-pc.svg" class="card-img-top bg-light" alt="Mini PC">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Computación</span>
+      <h3 class="h4 fw-bold">Mini PC</h3>
+      <p class="text-secondary">Computadora compacta para escritorio, oficina o estudio.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$540.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-mini-pc">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/pc-desktop.svg" class="card-img-top bg-light" alt="PC Desktop">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Computación</span>
+      <h3 class="h4 fw-bold">PC Desktop</h3>
+      <p class="text-secondary">Equipo de escritorio preparado para trabajo intensivo y multitarea.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$980.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-pc-desktop">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/ssd.svg" class="card-img-top bg-light" alt="SSD Externo 1 TB">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Computación</span>
+      <h3 class="h4 fw-bold">SSD Externo 1 TB</h3>
+      <p class="text-secondary">Almacenamiento rápido y portátil para archivos y copias de seguridad.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$145.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-ssd-externo-1-tb">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/printer.svg" class="card-img-top bg-light" alt="Impresora Wi‑Fi">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Computación</span>
+      <h3 class="h4 fw-bold">Impresora Wi‑Fi</h3>
+      <p class="text-secondary">Impresora multifunción para hogar, estudio y oficina.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$280.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-impresora-wi-fi">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/router.svg" class="card-img-top bg-light" alt="Router Wi‑Fi 6">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Computación</span>
+      <h3 class="h4 fw-bold">Router Wi‑Fi 6</h3>
+      <p class="text-secondary">Router moderno para mejorar cobertura y velocidad de conexión.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$125.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-router-wi-fi-6">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/webcam.svg" class="card-img-top bg-light" alt="Webcam Full HD">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Computación</span>
+      <h3 class="h4 fw-bold">Webcam Full HD</h3>
+      <p class="text-secondary">Webcam para videollamadas, clases virtuales y streaming.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$78.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-webcam-full-hd">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div></div>
+  </section>
+
+  <section class="pt-4">
+    <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4">
+      <div><span class="badge text-bg-primary rounded-pill mb-2">Categoría 02</span><h2 class="fw-bold mb-0">Accesorios tecnológicos</h2></div>
+      <span class="text-secondary">10 productos</span>
+    </div>
+    <div class="row g-4">
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/mouse-wireless.svg" class="card-img-top bg-light" alt="Mouse inalámbrico">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Accesorios tecnológicos</span>
+      <h3 class="h4 fw-bold">Mouse inalámbrico</h3>
+      <p class="text-secondary">Mouse cómodo y preciso para uso diario.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$25.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-mouse-inalambrico">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/mouse-gamer.svg" class="card-img-top bg-light" alt="Mouse Gamer">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Accesorios tecnológicos</span>
+      <h3 class="h4 fw-bold">Mouse Gamer</h3>
+      <p class="text-secondary">Mouse de alta precisión para gaming y trabajo intensivo.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$40.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-mouse-gamer">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/keyboard-usb.svg" class="card-img-top bg-light" alt="Teclado USB">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Accesorios tecnológicos</span>
+      <h3 class="h4 fw-bold">Teclado USB</h3>
+      <p class="text-secondary">Teclado cómodo y resistente para estudiar o trabajar.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$35.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-teclado-usb">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/keyboard-mech.svg" class="card-img-top bg-light" alt="Teclado Mecánico">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Accesorios tecnológicos</span>
+      <h3 class="h4 fw-bold">Teclado Mecánico</h3>
+      <p class="text-secondary">Teclado mecánico para gaming, programación y escritura intensiva.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$70.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-teclado-mecanico">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/headphones-bt.svg" class="card-img-top bg-light" alt="Auriculares Bluetooth">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Accesorios tecnológicos</span>
+      <h3 class="h4 fw-bold">Auriculares Bluetooth</h3>
+      <p class="text-secondary">Auriculares inalámbricos con sonido envolvente y gran autonomía.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$95.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-auriculares-bluetooth">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/headphones-gamer.svg" class="card-img-top bg-light" alt="Auriculares Gamer">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Accesorios tecnológicos</span>
+      <h3 class="h4 fw-bold">Auriculares Gamer</h3>
+      <p class="text-secondary">Headset con micrófono para juegos y videollamadas.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$110.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-auriculares-gamer">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/speakers.svg" class="card-img-top bg-light" alt="Parlantes 2.0">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Accesorios tecnológicos</span>
+      <h3 class="h4 fw-bold">Parlantes 2.0</h3>
+      <p class="text-secondary">Parlantes compactos para escritorio con sonido claro.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$65.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-parlantes-20">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/hub-usbc.svg" class="card-img-top bg-light" alt="Hub USB-C">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Accesorios tecnológicos</span>
+      <h3 class="h4 fw-bold">Hub USB-C</h3>
+      <p class="text-secondary">Amplía las conexiones de notebooks y tablets.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$58.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-hub-usb-c">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/stand.svg" class="card-img-top bg-light" alt="Base para Notebook">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Accesorios tecnológicos</span>
+      <h3 class="h4 fw-bold">Base para Notebook</h3>
+      <p class="text-secondary">Soporte regulable para mejorar postura y ventilación.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$42.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-base-para-notebook">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="col-md-6 col-xl-4">
+  <article class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+    <img src="./img/powerbank.svg" class="card-img-top bg-light" alt="Power Bank 20.000">
+    <div class="card-body d-flex flex-column p-4">
+      <span class="badge text-bg-light text-primary align-self-start mb-2">Accesorios tecnológicos</span>
+      <h3 class="h4 fw-bold">Power Bank 20.000</h3>
+      <p class="text-secondary">Batería externa de alta capacidad para dispositivos móviles.</p>
+      <div class="d-flex justify-content-between align-items-center mt-auto pt-3">
+        <span class="fs-4 fw-bold">$72.000</span>
+        <button class="btn btn-primary rounded-pill px-3"
+          data-bs-toggle="modal" data-bs-target="#modal-power-bank-20000">
+          Ver detalle
+        </button>
+      </div>
+    </div>
+  </article>
+</div></div>
+  </section>
+</main>
 
 
-    <div class="row g-4 mb-5">
-
-
-      <!-- PRODUCTO 1 -->
-      <div class="col-sm-12 col-md-4">
-
-        <div class="card shadow h-100">
-
-          <img
-            src="./img/notebook.JPG"
-            class="card-img-top"
-            alt="Notebook"
-          >
-
-          <div class="card-body text-center">
-
-            <h3 class="card-title">
-              Notebook
-            </h3>
-
-            <p class="card-text">
-              Notebook ideal para estudiar, trabajar y navegar.
-            </p>
-
-            <p class="precio">
-              $850.000
-            </p>
-
-            <button
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#modalNotebook"
-            >
-              Ver producto
-            </button>
-
+<div class="modal fade" id="modal-notebook-air" tabindex="-1" aria-labelledby="title-notebook-air" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-notebook-air">Notebook Air</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/notebook-air.svg" class="modal-product-img rounded-4" alt="Notebook Air">
           </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- PRODUCTO 2 -->
-      <div class="col-sm-12 col-md-4">
-
-        <div class="card shadow h-100">
-
-          <img
-            src="./img/teclado.JPG"
-            class="card-img-top"
-            alt="Teclado"
-          >
-
-          <div class="card-body text-center">
-
-            <h3 class="card-title">
-              Teclado USB
-            </h3>
-
-            <p class="card-text">
-              Teclado cómodo para estudiar, trabajar o programar.
-            </p>
-
-            <p class="precio">
-              $35.000
-            </p>
-
-            <button
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#modalTeclado"
-            >
-              Ver producto
-            </button>
-
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Computación</span>
+            <h3 class="fw-bold">Notebook Air</h3>
+            <p class="text-secondary">Notebook liviana para estudiar, trabajar y navegar todos los días.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Pantalla 15,6”</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>8 GB RAM</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>SSD 512 GB</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Wi‑Fi y Bluetooth</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$850.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
           </div>
-
         </div>
-
       </div>
+    </div>
+  </div>
+</div>
 
-
-      <!-- PRODUCTO 3 -->
-      <div class="col-sm-12 col-md-4">
-
-        <div class="card shadow h-100">
-
-          <img
-            src="./img/mouse.JPG"
-            class="card-img-top"
-            alt="Mouse"
-          >
-
-          <div class="card-body text-center">
-
-            <h3 class="card-title">
-              Mouse inalámbrico
-            </h3>
-
-            <p class="card-text">
-              Mouse práctico y cómodo para uso diario.
-            </p>
-
-            <p class="precio">
-              $25.000
-            </p>
-
-            <button
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#modalMouse"
-            >
-              Ver producto
-            </button>
-
+<div class="modal fade" id="modal-notebook-pro" tabindex="-1" aria-labelledby="title-notebook-pro" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-notebook-pro">Notebook Pro</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/notebook-pro.svg" class="modal-product-img rounded-4" alt="Notebook Pro">
           </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- CATEGORÍA 2 -->
-    <h2 class="text-center text-primary mb-4">
-      🎮 Accesorios tecnológicos
-    </h2>
-
-
-    <div class="row g-4 mb-5">
-
-
-      <!-- PRODUCTO 4 -->
-      <div class="col-sm-12 col-md-4">
-
-        <div class="card shadow h-100">
-
-          <img
-            src="./img/mouse.JPG"
-            class="card-img-top"
-            alt="Mouse gamer"
-          >
-
-          <div class="card-body text-center">
-
-            <h3 class="card-title">
-              Mouse Gamer
-            </h3>
-
-            <p class="card-text">
-              Mouse de alta precisión para juegos y trabajo.
-            </p>
-
-            <p class="precio">
-              $40.000
-            </p>
-
-            <button
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#modalMouseGamer"
-            >
-              Ver producto
-            </button>
-
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Computación</span>
+            <h3 class="fw-bold">Notebook Pro</h3>
+            <p class="text-secondary">Equipo de alto rendimiento para programación, edición y tareas exigentes.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Pantalla Full HD</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>16 GB RAM</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>SSD 1 TB</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Procesador de alto rendimiento</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$1.200.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
           </div>
-
         </div>
-
       </div>
+    </div>
+  </div>
+</div>
 
-
-      <!-- PRODUCTO 5 -->
-      <div class="col-sm-12 col-md-4">
-
-        <div class="card shadow h-100">
-
-          <img
-            src="./img/teclado.JPG"
-            class="card-img-top"
-            alt="Teclado mecánico"
-          >
-
-          <div class="card-body text-center">
-
-            <h3 class="card-title">
-              Teclado Mecánico
-            </h3>
-
-            <p class="card-text">
-              Teclado mecánico ideal para gaming y programación.
-            </p>
-
-            <p class="precio">
-              $70.000
-            </p>
-
-            <button
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#modalTecladoMecanico"
-            >
-              Ver producto
-            </button>
-
+<div class="modal fade" id="modal-monitor-24" tabindex="-1" aria-labelledby="title-monitor-24" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-monitor-24">Monitor 24”</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/monitor-24.svg" class="modal-product-img rounded-4" alt="Monitor 24”">
           </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- PRODUCTO 6 -->
-      <div class="col-sm-12 col-md-4">
-
-        <div class="card shadow h-100">
-
-          <img
-            src="./img/notebook.JPG"
-            class="card-img-top"
-            alt="Notebook Pro"
-          >
-
-          <div class="card-body text-center">
-
-            <h3 class="card-title">
-              Notebook Pro
-            </h3>
-
-            <p class="card-text">
-              Equipo potente para tareas exigentes.
-            </p>
-
-            <p class="precio">
-              $1.200.000
-            </p>
-
-            <button
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#modalNotebookPro"
-            >
-              Ver producto
-            </button>
-
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Computación</span>
+            <h3 class="fw-bold">Monitor 24”</h3>
+            <p class="text-secondary">Monitor Full HD ideal para estudio, oficina y entretenimiento.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>24 pulgadas</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Resolución Full HD</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>HDMI</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Diseño sin bordes</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$220.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
           </div>
-
         </div>
-
       </div>
-
     </div>
-
-  </main>
-
-
-  <!-- ========================= -->
-  <!-- MODAL NOTEBOOK -->
-  <!-- ========================= -->
-
-  <div
-    class="modal fade"
-    id="modalNotebook"
-    tabindex="-1"
-    aria-hidden="true"
-  >
-
-    <div class="modal-dialog">
-
-      <div class="modal-content">
-
-        <div class="modal-header">
-
-          <h2 class="modal-title">
-            Notebook
-          </h2>
-
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Cerrar"
-          ></button>
-
-        </div>
-
-        <div class="modal-body">
-
-          <p>
-            Notebook ideal para estudiar, trabajar y navegar por internet.
-          </p>
-
-          <p>
-            Pantalla de alta calidad, almacenamiento amplio y diseño cómodo.
-          </p>
-
-          <strong>
-            Precio: $850.000
-          </strong>
-
-        </div>
-
-        <div class="modal-footer">
-
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            Cerrar
-          </button>
-
-        </div>
-
-      </div>
-
-    </div>
-
   </div>
+</div>
 
-
-  <!-- MODAL TECLADO -->
-
-  <div
-    class="modal fade"
-    id="modalTeclado"
-    tabindex="-1"
-    aria-hidden="true"
-  >
-
-    <div class="modal-dialog">
-
-      <div class="modal-content">
-
-        <div class="modal-header">
-
-          <h2 class="modal-title">
-            Teclado USB
-          </h2>
-
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-          ></button>
-
-        </div>
-
-        <div class="modal-body">
-
-          <p>
-            Teclado USB cómodo y práctico.
-          </p>
-
-          <p>
-            Ideal para estudiar, trabajar y programar.
-          </p>
-
-          <strong>
-            Precio: $35.000
-          </strong>
-
-        </div>
-
+<div class="modal fade" id="modal-monitor-27" tabindex="-1" aria-labelledby="title-monitor-27" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-monitor-27">Monitor 27”</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
-
-    </div>
-
-  </div>
-
-
-  <!-- MODAL MOUSE -->
-
-  <div
-    class="modal fade"
-    id="modalMouse"
-    tabindex="-1"
-    aria-hidden="true"
-  >
-
-    <div class="modal-dialog">
-
-      <div class="modal-content">
-
-        <div class="modal-header">
-
-          <h2 class="modal-title">
-            Mouse inalámbrico
-          </h2>
-
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-          ></button>
-
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/monitor-27.svg" class="modal-product-img rounded-4" alt="Monitor 27”">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Computación</span>
+            <h3 class="fw-bold">Monitor 27”</h3>
+            <p class="text-secondary">Pantalla amplia para multitarea, diseño y entretenimiento.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>27 pulgadas</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Resolución QHD</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>HDMI y DisplayPort</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>75 Hz</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$320.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
         </div>
-
-        <div class="modal-body">
-
-          <p>
-            Mouse inalámbrico cómodo y práctico para todos los días.
-          </p>
-
-          <strong>
-            Precio: $25.000
-          </strong>
-
-        </div>
-
       </div>
-
     </div>
-
   </div>
+</div>
 
-
-  <!-- MODAL MOUSE GAMER -->
-
-  <div
-    class="modal fade"
-    id="modalMouseGamer"
-    tabindex="-1"
-    aria-hidden="true"
-  >
-
-    <div class="modal-dialog">
-
-      <div class="modal-content">
-
-        <div class="modal-header">
-
-          <h2 class="modal-title">
-            Mouse Gamer
-          </h2>
-
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-          ></button>
-
-        </div>
-
-        <div class="modal-body">
-
-          <p>
-            Mouse de alta precisión para gaming y trabajo.
-          </p>
-
-          <p>
-            Diseño ergonómico y excelente respuesta.
-          </p>
-
-          <strong>
-            Precio: $40.000
-          </strong>
-
-        </div>
-
+<div class="modal fade" id="modal-mini-pc" tabindex="-1" aria-labelledby="title-mini-pc" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-mini-pc">Mini PC</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
-
-    </div>
-
-  </div>
-
-
-  <!-- MODAL TECLADO MECÁNICO -->
-
-  <div
-    class="modal fade"
-    id="modalTecladoMecanico"
-    tabindex="-1"
-    aria-hidden="true"
-  >
-
-    <div class="modal-dialog">
-
-      <div class="modal-content">
-
-        <div class="modal-header">
-
-          <h2 class="modal-title">
-            Teclado Mecánico
-          </h2>
-
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-          ></button>
-
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/mini-pc.svg" class="modal-product-img rounded-4" alt="Mini PC">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Computación</span>
+            <h3 class="fw-bold">Mini PC</h3>
+            <p class="text-secondary">Computadora compacta para escritorio, oficina o estudio.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>16 GB RAM</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>SSD 512 GB</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Wi‑Fi</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Formato compacto</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$540.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
         </div>
-
-        <div class="modal-body">
-
-          <p>
-            Teclado mecánico ideal para gaming y programación.
-          </p>
-
-          <p>
-            Construcción resistente y respuesta rápida.
-          </p>
-
-          <strong>
-            Precio: $70.000
-          </strong>
-
-        </div>
-
       </div>
-
     </div>
-
   </div>
+</div>
 
-
-  <!-- MODAL NOTEBOOK PRO -->
-
-  <div
-    class="modal fade"
-    id="modalNotebookPro"
-    tabindex="-1"
-    aria-hidden="true"
-  >
-
-    <div class="modal-dialog">
-
-      <div class="modal-content">
-
-        <div class="modal-header">
-
-          <h2 class="modal-title">
-            Notebook Pro
-          </h2>
-
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-          ></button>
-
-        </div>
-
-        <div class="modal-body">
-
-          <p>
-            Notebook potente para tareas exigentes.
-          </p>
-
-          <p>
-            Ideal para trabajo, programación y edición.
-          </p>
-
-          <strong>
-            Precio: $1.200.000
-          </strong>
-
-        </div>
-
+<div class="modal fade" id="modal-pc-desktop" tabindex="-1" aria-labelledby="title-pc-desktop" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-pc-desktop">PC Desktop</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
       </div>
-
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/pc-desktop.svg" class="modal-product-img rounded-4" alt="PC Desktop">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Computación</span>
+            <h3 class="fw-bold">PC Desktop</h3>
+            <p class="text-secondary">Equipo de escritorio preparado para trabajo intensivo y multitarea.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>16 GB RAM</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>SSD 1 TB</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Gabinete ventilado</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Gráficos integrados</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$980.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
   </div>
+</div>
+
+<div class="modal fade" id="modal-ssd-externo-1-tb" tabindex="-1" aria-labelledby="title-ssd-externo-1-tb" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-ssd-externo-1-tb">SSD Externo 1 TB</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/ssd.svg" class="modal-product-img rounded-4" alt="SSD Externo 1 TB">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Computación</span>
+            <h3 class="fw-bold">SSD Externo 1 TB</h3>
+            <p class="text-secondary">Almacenamiento rápido y portátil para archivos y copias de seguridad.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>1 TB</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>USB 3.2</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Alta velocidad</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Formato compacto</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$145.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-impresora-wi-fi" tabindex="-1" aria-labelledby="title-impresora-wi-fi" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-impresora-wi-fi">Impresora Wi‑Fi</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/printer.svg" class="modal-product-img rounded-4" alt="Impresora Wi‑Fi">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Computación</span>
+            <h3 class="fw-bold">Impresora Wi‑Fi</h3>
+            <p class="text-secondary">Impresora multifunción para hogar, estudio y oficina.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Wi‑Fi</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Escáner</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Copias</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Impresión color</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$280.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-router-wi-fi-6" tabindex="-1" aria-labelledby="title-router-wi-fi-6" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-router-wi-fi-6">Router Wi‑Fi 6</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/router.svg" class="modal-product-img rounded-4" alt="Router Wi‑Fi 6">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Computación</span>
+            <h3 class="fw-bold">Router Wi‑Fi 6</h3>
+            <p class="text-secondary">Router moderno para mejorar cobertura y velocidad de conexión.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Wi‑Fi 6</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Doble banda</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>4 antenas</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Gigabit Ethernet</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$125.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-webcam-full-hd" tabindex="-1" aria-labelledby="title-webcam-full-hd" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-webcam-full-hd">Webcam Full HD</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/webcam.svg" class="modal-product-img rounded-4" alt="Webcam Full HD">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Computación</span>
+            <h3 class="fw-bold">Webcam Full HD</h3>
+            <p class="text-secondary">Webcam para videollamadas, clases virtuales y streaming.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>1080p</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Micrófono integrado</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>USB</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Enfoque automático</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$78.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-mouse-inalambrico" tabindex="-1" aria-labelledby="title-mouse-inalambrico" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-mouse-inalambrico">Mouse inalámbrico</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/mouse-wireless.svg" class="modal-product-img rounded-4" alt="Mouse inalámbrico">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Accesorios tecnológicos</span>
+            <h3 class="fw-bold">Mouse inalámbrico</h3>
+            <p class="text-secondary">Mouse cómodo y preciso para uso diario.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Conexión inalámbrica</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Diseño ergonómico</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Bajo consumo</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Sensor óptico</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$25.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-mouse-gamer" tabindex="-1" aria-labelledby="title-mouse-gamer" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-mouse-gamer">Mouse Gamer</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/mouse-gamer.svg" class="modal-product-img rounded-4" alt="Mouse Gamer">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Accesorios tecnológicos</span>
+            <h3 class="fw-bold">Mouse Gamer</h3>
+            <p class="text-secondary">Mouse de alta precisión para gaming y trabajo intensivo.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Sensor de alta precisión</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Botones laterales</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Iluminación RGB</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Diseño ergonómico</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$40.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-teclado-usb" tabindex="-1" aria-labelledby="title-teclado-usb" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-teclado-usb">Teclado USB</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/keyboard-usb.svg" class="modal-product-img rounded-4" alt="Teclado USB">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Accesorios tecnológicos</span>
+            <h3 class="fw-bold">Teclado USB</h3>
+            <p class="text-secondary">Teclado cómodo y resistente para estudiar o trabajar.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Conexión USB</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Teclas silenciosas</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Formato completo</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Plug & Play</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$35.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-teclado-mecanico" tabindex="-1" aria-labelledby="title-teclado-mecanico" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-teclado-mecanico">Teclado Mecánico</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/keyboard-mech.svg" class="modal-product-img rounded-4" alt="Teclado Mecánico">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Accesorios tecnológicos</span>
+            <h3 class="fw-bold">Teclado Mecánico</h3>
+            <p class="text-secondary">Teclado mecánico para gaming, programación y escritura intensiva.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Switches mecánicos</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Retroiluminación</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Construcción reforzada</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Anti-ghosting</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$70.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-auriculares-bluetooth" tabindex="-1" aria-labelledby="title-auriculares-bluetooth" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-auriculares-bluetooth">Auriculares Bluetooth</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/headphones-bt.svg" class="modal-product-img rounded-4" alt="Auriculares Bluetooth">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Accesorios tecnológicos</span>
+            <h3 class="fw-bold">Auriculares Bluetooth</h3>
+            <p class="text-secondary">Auriculares inalámbricos con sonido envolvente y gran autonomía.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Bluetooth</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Micrófono</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Hasta 30 h</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Carga USB-C</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$95.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-auriculares-gamer" tabindex="-1" aria-labelledby="title-auriculares-gamer" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-auriculares-gamer">Auriculares Gamer</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/headphones-gamer.svg" class="modal-product-img rounded-4" alt="Auriculares Gamer">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Accesorios tecnológicos</span>
+            <h3 class="fw-bold">Auriculares Gamer</h3>
+            <p class="text-secondary">Headset con micrófono para juegos y videollamadas.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Micrófono flexible</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Sonido estéreo</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Almohadillas cómodas</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Iluminación LED</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$110.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-parlantes-20" tabindex="-1" aria-labelledby="title-parlantes-20" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-parlantes-20">Parlantes 2.0</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/speakers.svg" class="modal-product-img rounded-4" alt="Parlantes 2.0">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Accesorios tecnológicos</span>
+            <h3 class="fw-bold">Parlantes 2.0</h3>
+            <p class="text-secondary">Parlantes compactos para escritorio con sonido claro.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Sistema 2.0</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Control de volumen</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Entrada auxiliar</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Alimentación USB</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$65.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-hub-usb-c" tabindex="-1" aria-labelledby="title-hub-usb-c" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-hub-usb-c">Hub USB-C</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/hub-usbc.svg" class="modal-product-img rounded-4" alt="Hub USB-C">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Accesorios tecnológicos</span>
+            <h3 class="fw-bold">Hub USB-C</h3>
+            <p class="text-secondary">Amplía las conexiones de notebooks y tablets.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>USB-C</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>HDMI</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>USB 3.0</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Lector SD</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$58.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-base-para-notebook" tabindex="-1" aria-labelledby="title-base-para-notebook" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-base-para-notebook">Base para Notebook</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/stand.svg" class="modal-product-img rounded-4" alt="Base para Notebook">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Accesorios tecnológicos</span>
+            <h3 class="fw-bold">Base para Notebook</h3>
+            <p class="text-secondary">Soporte regulable para mejorar postura y ventilación.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Altura regulable</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Aluminio</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Antideslizante</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Plegable</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$42.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal-power-bank-20000" tabindex="-1" aria-labelledby="title-power-bank-20000" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-0">
+        <h2 class="modal-title h4 fw-bold" id="title-power-bank-20000">Power Bank 20.000</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6">
+            <img src="./img/powerbank.svg" class="modal-product-img rounded-4" alt="Power Bank 20.000">
+          </div>
+          <div class="col-md-6">
+            <span class="badge text-bg-primary rounded-pill mb-3">Accesorios tecnológicos</span>
+            <h3 class="fw-bold">Power Bank 20.000</h3>
+            <p class="text-secondary">Batería externa de alta capacidad para dispositivos móviles.</p>
+            <ul class="list-group list-group-flush mb-4">
+              <li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>20.000 mAh</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>USB-C</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Carga rápida</li>
+<li class="list-group-item px-0"><i class="bi bi-check2-circle text-primary me-2"></i>Doble salida</li>
+            </ul>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fs-3 fw-bold">$72.000</span>
+              <button type="button" class="btn btn-dark rounded-pill px-4" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-  <!-- FOOTER -->
+<footer class="text-white py-5 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+    <div>
+      <div class="fw-bold fs-4"><i class="bi bi-cpu-fill me-2 text-primary"></i>TechStore</div>
+      <div class="text-white-50 small">© 2026 Todos los derechos reservados.</div>
+    </div>
+    <div class="d-flex gap-4">
+      <a href="index.html" class="text-white-50 text-decoration-none">Inicio</a>
+      <a href="categorias.html" class="text-white-50 text-decoration-none">Productos</a>
+      <a href="contacto.html" class="text-white-50 text-decoration-none">Contacto</a>
+    </div>
+  </div>
+</footer>
 
-  <footer class="bg-dark text-white text-center py-4 mt-5">
-
-    <p class="mb-1">
-      © 2026 TechStore - Todos los derechos reservados
-    </p>
-
-    <a
-      href="contacto.html"
-      class="text-white"
-    >
-      Contactanos
-    </a>
-
-  </footer>
-
-
-  <!-- Bootstrap JavaScript -->
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-  ></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
