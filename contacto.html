@@ -22,159 +22,165 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark navbar-tech py-3 sticky-top shadow-sm"
-    >
-      <div class="container">
-        <a class="navbar-brand fw-bold fs-4" href="index.html"
-          ><i class="bi bi-cpu-fill me-2 text-primary"></i>Tech<span
-            class="text-primary"
-            >Store</span
-          ></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#menu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="categorias.html">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <header class="contact-hero text-white py-5">
-      <div class="container py-5">
-        <span class="badge text-bg-primary rounded-pill mb-3">Contacto</span>
-        <h1 class="display-4 fw-bold">Estamos para ayudarte.</h1>
-        <p class="lead text-white-50 mb-0">
-          Consultanos por productos, envíos o cualquier duda sobre la tienda.
-        </p>
-      </div>
+  <body>
+    <header class="sticky-top">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark navbar-tech py-3 shadow-sm"
+        aria-label="Menu principal"
+      >
+        <div class="container">
+          <a class="navbar-brand fw-bold fs-4" href="index.html"
+            ><i class="bi bi-cpu-fill me-2 text-primary"></i>Tech<span
+              class="text-primary"
+              >Store</span
+            ></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categorias.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main class="container py-5">
-      <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
-        <div class="row g-0">
-          <div class="col-lg-5">
-            <div class="contact-panel text-white h-100 p-4 p-md-5">
-              <h2 class="fw-bold mb-3">Hablemos.</h2>
-              <p class="text-white-50 mb-5">
-                Nuestro equipo está listo para orientarte.
-              </p>
-              <div class="mb-4">
-                <i class="bi bi-envelope text-primary me-2"></i>
-                contacto@techstore.com
-              </div>
-              <div class="mb-4">
-                <i class="bi bi-telephone text-primary me-2"></i> 11 1234-5678
-              </div>
-              <div>
-                <i class="bi bi-clock text-primary me-2"></i> Lun a Vie · 9 a 18
-                hs
+    <main>
+      <section class="contact-hero text-white py-5">
+        <div class="container py-5">
+          <span class="badge text-bg-primary rounded-pill mb-3">Contacto</span>
+          <h1 class="display-4 fw-bold">Estamos para ayudarte.</h1>
+          <p class="lead text-white-50 mb-0">
+            Consultanos por productos, envíos o cualquier duda sobre la tienda.
+          </p>
+        </div>
+      </section>
+
+      <section class="container py-5">
+        <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+          <div class="row g-0">
+            <div class="col-lg-5">
+              <div class="contact-panel text-white h-100 p-4 p-md-5">
+                <h2 class="fw-bold mb-3">Hablemos.</h2>
+                <p class="text-white-50 mb-5">
+                  Nuestro equipo está listo para orientarte.
+                </p>
+                <div class="mb-4">
+                  <i class="bi bi-envelope text-primary me-2"></i>
+                  contacto@techstore.com
+                </div>
+                <div class="mb-4">
+                  <i class="bi bi-telephone text-primary me-2"></i> 11 1234-5678
+                </div>
+                <div>
+                  <i class="bi bi-clock text-primary me-2"></i> Lun a Vie · 9 a
+                  18 hs
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-7 bg-white">
-            <div class="p-4 p-md-5">
-              <h2 class="fw-bold">Mandanos tu consulta</h2>
-              <p class="text-secondary mb-4">
-                Completá los datos y dejanos tu mensaje.
-              </p>
-              <form>
-                <div class="row g-4">
-                  <div class="col-md-6">
-                    <label for="nombre" class="form-label fw-semibold"
-                      >Nombre</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control form-control-lg"
-                      id="nombre"
-                      required
-                      minlength="2"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="email" class="form-label fw-semibold"
-                      >Email</label
-                    >
-                    <input
-                      type="email"
-                      class="form-control form-control-lg"
-                      id="email"
-                      required
-                    />
-                  </div>
-                  <div class="col-12">
-                    <label for="asunto" class="form-label fw-semibold"
-                      >Asunto</label
-                    >
-                    <select
-                      class="form-select form-select-lg"
-                      id="asunto"
-                      required
-                    >
-                      <option value="">Seleccioná una opción</option>
-                      <option>Consulta sobre un producto</option>
-                      <option>Consulta sobre envíos</option>
-                      <option>Otro</option>
-                    </select>
-                  </div>
-                  <div class="col-12">
-                    <label for="mensaje" class="form-label fw-semibold"
-                      >Mensaje</label
-                    >
-                    <textarea
-                      class="form-control"
-                      id="mensaje"
-                      rows="6"
-                      required
-                      minlength="10"
-                    ></textarea>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-check">
+            <div class="col-lg-7 bg-white">
+              <div class="p-4 p-md-5">
+                <h2 class="fw-bold">Mandanos tu consulta</h2>
+                <p class="text-secondary mb-4">
+                  Completá los datos y dejanos tu mensaje.
+                </p>
+                <form>
+                  <div class="row g-4">
+                    <div class="col-md-6">
+                      <label for="nombre" class="form-label fw-semibold"
+                        >Nombre</label
+                      >
                       <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="terminos"
+                        type="text"
+                        class="form-control form-control-lg"
+                        id="nombre"
+                        required
+                        minlength="2"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="email" class="form-label fw-semibold"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control form-control-lg"
+                        id="email"
                         required
                       />
-                      <label class="form-check-label" for="terminos"
-                        >Acepto que mis datos sean utilizados para responder mi
-                        consulta.</label
+                    </div>
+                    <div class="col-12">
+                      <label for="asunto" class="form-label fw-semibold"
+                        >Asunto</label
                       >
+                      <select
+                        class="form-select form-select-lg"
+                        id="asunto"
+                        required
+                      >
+                        <option value="">Seleccioná una opción</option>
+                        <option>Consulta sobre un producto</option>
+                        <option>Consulta sobre envíos</option>
+                        <option>Otro</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <label for="mensaje" class="form-label fw-semibold"
+                        >Mensaje</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="mensaje"
+                        rows="6"
+                        required
+                        minlength="10"
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input theme-success"
+                          type="checkbox"
+                          id="terminos"
+                          required
+                        />
+                        <label class="form-check-label" for="terminos"
+                          >Acepto que mis datos sean utilizados para responder
+                          mi consulta.</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button
+                        type="submit"
+                        class="btn btn-primary btn-lg rounded-pill px-5"
+                      >
+                        Enviar mensaje <i class="bi bi-send ms-2"></i>
+                      </button>
                     </div>
                   </div>
-                  <div class="col-12">
-                    <button
-                      type="submit"
-                      class="btn btn-primary btn-lg rounded-pill px-5"
-                    >
-                      Enviar mensaje <i class="bi bi-send ms-2"></i>
-                    </button>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer class="text-white py-5 mt-5">
