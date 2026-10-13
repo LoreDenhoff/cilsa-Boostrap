@@ -302,6 +302,170 @@
         </div>
       </section>
 
+      <!-- Intento de carrusel -->
+      <section class="py-5">
+        <div class="container py-4">
+          <div
+            class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4"
+          >
+            <div>
+              <span class="badge text-bg-primary rounded-pill mb-2"
+                >Destacados</span
+              >
+              <h2 class="display-6 fw-bold mb-0">Lo más elegido</h2>
+            </div>
+            <a
+              href="categorias.html"
+              class="btn btn-outline-dark rounded-pill px-4"
+              >Ver todos</a
+            >
+
+            <div
+              id="carrusel-productos"
+              class="carousel carousel-dark slide"
+              data-bs-ride="false"
+            >
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active px-5">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-xl-4">
+                      <article
+                        class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                      >
+                        <img
+                          src="./img/notebook-air.svg"
+                          class="card-img-top bg-light"
+                          alt="Notebook Air"
+                        />
+                        <div class="card-body d-flex flex-column p-4">
+                          <span
+                            class="badge text-bg-light text-primary align-self-start mb-2"
+                            >Computación</span
+                          >
+                          <h3 class="h4 fw-bold">Notebook Air</h3>
+                          <p class="text-secondary">
+                            Notebook liviana para estudiar, trabajar y navegar
+                            todos los días.
+                          </p>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-auto pt-3"
+                          >
+                            <span class="fs-4 fw-bold">$850.000</span>
+                            <button
+                              class="btn btn-primary rounded-pill px-3"
+                              data-bs-toggle="modal"
+                              data-bs-target="#modal-notebook-air"
+                            >
+                              Ver detalle
+                            </button>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                      <article
+                        class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                      >
+                        <img
+                          src="./img/monitor-24.svg"
+                          class="card-img-top bg-light"
+                          alt="Monitor 24”"
+                        />
+                        <div class="card-body d-flex flex-column p-4">
+                          <span
+                            class="badge text-bg-light text-primary align-self-start mb-2"
+                            >Computación</span
+                          >
+                          <h3 class="h4 fw-bold">Monitor 24”</h3>
+                          <p class="text-secondary">
+                            Monitor Full HD ideal para estudio, oficina y
+                            entretenimiento.
+                          </p>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-auto pt-3"
+                          >
+                            <span class="fs-4 fw-bold">$220.000</span>
+                            <button
+                              class="btn btn-primary rounded-pill px-3"
+                              data-bs-toggle="modal"
+                              data-bs-target="#modal-monitor-24"
+                            >
+                              Ver detalle
+                            </button>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                      <article
+                        class="card product-card h-100 border-0 shadow-sm rounded-4 overflow-hidden"
+                      >
+                        <img
+                          src="./img/headphones-bt.svg"
+                          class="card-img-top bg-light"
+                          alt="Auriculares Bluetooth"
+                        />
+                        <div class="card-body d-flex flex-column p-4">
+                          <span
+                            class="badge text-bg-light text-primary align-self-start mb-2"
+                            >Accesorios tecnológicos</span
+                          >
+                          <h3 class="h4 fw-bold">Auriculares Bluetooth</h3>
+                          <p class="text-secondary">
+                            Auriculares inalámbricos con sonido envolvente y
+                            gran autonomía.
+                          </p>
+                          <div
+                            class="d-flex justify-content-between align-items-center mt-auto pt-3"
+                          >
+                            <span class="fs-4 fw-bold">$95.000</span>
+                            <button
+                              class="btn btn-primary rounded-pill px-3"
+                              data-bs-toggle="modal"
+                              data-bs-target="#modal-auriculares-bluetooth"
+                            >
+                              Ver detalle
+                            </button>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2: copiá el bloque de arriba (carousel-item sin "active") con los próximos 3 productos -->
+              </div>
+              <button
+                class="carousel-control-prev mt-5"
+                type="button"
+                data-bs-target="#carrusel-productos"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+
+              <button
+                class="carousel-control-next mt-5"
+                type="button"
+                data-bs-target="#carrusel-productos"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div
         class="modal fade"
         id="modal-notebook-air"
