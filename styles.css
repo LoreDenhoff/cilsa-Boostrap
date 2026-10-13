@@ -98,3 +98,11 @@ footer {
   color: white;
   transform: scale(1.1);
 }
+
+.form-check-input:checked {
+  background-color: var(--ts-blue);
+}
+
+.form-check-input {
+  border-color: var(--ts-blue);
+}
